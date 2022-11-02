@@ -1,0 +1,134 @@
+@font-face {
+    font-family: DM Sans;
+    src: url(DMSans-Regular.woff);
+}
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 242, 229);
+    font-family:DM Sans;
+}
+
+.container {
+    justify-self: center;
+    width: 350px;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 23px;
+    /* border: 2vh solid salmon; */
+}
+
+.title {
+    width: 440px;
+    height: 80px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 23px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.title h2 {
+    margin-top: -15px;
+}
+
+.black-logo {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-radius: 50%;
+    margin: 15px 25px 0 359px;
+    position: absolute;
+}
+
+.logo-border {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+    margin: 15px 25px 0 330px;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.container-sub {
+    width: 440px;
+    background-color: white;
+    height: 450px;
+
+    border-radius: 23px;
+    margin-top: 15px;
+
+
+}
+
+.container-sub h2,
+h1,
+h4 {
+    margin-left: 25px;
+}
+
+.bar-chart {
+    flex-direction: row-reverse;
+    /* margin-top: 200px; */
+    margin-top: 100px;
+
+}
+
+.bar {
+
+    width: 45px;
+    height: 50px;
+    background-color: hsl(10, 79%, 65%);
+    display: inline-block;
+
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+#day {
+    color: grey;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10px;
+
+}
+
+#line {
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+hr {
+    border: 1px solid hsl(186, 34%, 60%)
+}
+
+
+.tooltiptext {
+    display: none;
+    width: 80px;
+    background-color: black;
+    margin-bottom: 100px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    color: aliceblue;
+   
+    position: absolute;
+    z-index: 1;
+
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
